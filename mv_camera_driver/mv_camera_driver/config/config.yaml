@@ -1,0 +1,19 @@
+mv_camera: 
+  debug: true
+  ros_topic: "/mv_camera/image"
+  auto_exposure: true
+  exposure_time: 30
+  exposure_time_min: 1
+  exposure_time_max: 500
+  ae_target: 100
+  max_frame_frate: 20
+  set_wb_every_n_frame: 2000
+  sharpness: 2
+  gama: 117
+  conrast: 100
+  resolution_index: 8
+  resolution_size: 
+    offset_cols: 400
+    offset_rows: 200
+    witdh: 1120 # 1920 - 2*offset_cols
+    height: 800 # 1200 - 2* offset_rows

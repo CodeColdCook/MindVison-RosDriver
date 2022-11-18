@@ -1,0 +1,13 @@
+<launch>
+    <node pkg="mv_camera_driver"
+          name="app_mv_camera"
+          type="app_mv_camera"
+          output="screen"
+          respawn="false"
+          required="true"
+          cwd="node"
+          args=""
+          >
+    </node>
+    <rosparam command="load" file="$(find mv_camera_driver)/config/config.yaml"/>
+</launch>
